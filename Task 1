@@ -4,7 +4,7 @@ def main():
   print (result)
 
 def myFunction(text):
-   text = text.replace(" ", "...")
+   text = text.replace(" " , "...")
    return text
 
 main()
