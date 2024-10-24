@@ -5,7 +5,6 @@ myList.sort()
 while 1 in myList:
     myList.remove(1)
 
-myList.append(7)
-myList.append(8)
+myList.extend([7,8])
 
 print(myList)
