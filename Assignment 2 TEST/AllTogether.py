@@ -4,7 +4,9 @@ random_numbers = []
 
 for _ in range(10):
     random_numbers.append(random.randint(1,100))
-print("The list of ten random numbers are: ", random_numbers)
+
+for number in random_numbers:
+    print(number, end = ', ')
 
 i = 0
 while i < len(random_numbers):
@@ -14,4 +16,4 @@ while i < len(random_numbers):
         i += 1
 
 
-print("The remaining odd numbers are: ", random_numbers)
+print("\nThe remaining odd numbers are: ", random_numbers)
