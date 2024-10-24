@@ -7,7 +7,7 @@ for _ in range(10):
 print("The list of ten random numbers are: ", random_numbers)
 
 i = 0
-while i<len(random_numbers):
+while i < len(random_numbers):
     if random_numbers[i] % 2 == 0:
         random_numbers.pop(i)
     else:
