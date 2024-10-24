@@ -11,3 +11,4 @@ while check == 0:
             print("Please try again.")
     else:
         print("You must enter an integer between 1 an 100.")
+        
