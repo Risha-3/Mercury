@@ -1,5 +1,5 @@
 import random
-number = random.randint(1,00)
+number = random.randint(1,100)
 check = 0
 while check == 0:
     guessed_number = int(input("Enter a number between 1 and 100: "))
