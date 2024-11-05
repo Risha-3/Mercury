@@ -21,11 +21,3 @@ while True:
         print(f"{user_minutes} minutes is equivalent to {hours} hours and {minutes:.2f} minutes.")  # Prints the results.
     except ValueError: # If the user types in letters when asked for an integer, the program will display a message rather than crashing.
         print("Invalid input. Please try again.")
-
-
-# Strings,Integers and Floats
-# Inputs and outputs
-# Definitions
-# Conditionals
-# While loop
-# Error handling

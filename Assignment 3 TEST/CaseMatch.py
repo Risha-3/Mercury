@@ -30,10 +30,3 @@ def fix_robot():
 
 
 fix_robot()  # Calling the fix_robot function.
-
-
-# Strings and Intgers
-# Inputs and Outputs
-# Definitions
-# Match-Case Statements
-# Error Handling
