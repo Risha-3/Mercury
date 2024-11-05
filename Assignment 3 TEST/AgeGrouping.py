@@ -1,18 +1,18 @@
-# Create empty lists for different age groups
+# Empty lists for different age groups are created below.
 children = []
 teenagers = []
 young_adults = []
 adults = []
 
-# Ask the user for the number of players
+# Ask the user for the number of players.
 num_players = int(input("Enter the number of players: "))
 
 
 for _ in range(num_players):
-    while True:  # Loop until valid input
+    while True:  # Loops until valid input.
         name = input("Enter the player's name: ").strip()  # Removes whitespace before and after string.
-        if name:  # Check if the name is not empty
-            break 
+        if name:  # If the name variable is not empty, break loop and continue with the program (line 19).
+            break
         else:
             print("The name field cannot be empty.")
 
@@ -22,7 +22,7 @@ for _ in range(num_players):
             if age < 0:
                 print("Age must be greater than zero, please try again.")
             else:
-                break  # Exit loop if valid age
+                break  # Exit loop if input is valid.
         except ValueError:
             print("Age must be a number, please try again.")
 
@@ -35,10 +35,9 @@ for _ in range(num_players):
     else:
         adults.append(name)  # If age is 30 or above, add to adults.
 
-# Print out the age groups
+# Print out the age groups.
 print("\n")
 print("Children:", children)
 print("Teenagers:", teenagers)
 print("Young Adults:", young_adults)
 print("Adults:", adults)
-

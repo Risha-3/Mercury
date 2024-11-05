@@ -3,6 +3,7 @@ def fix_robot():
     This function provides a brief guide on basic maintenance tasks depending on what type of robot you own.
     It prompts the user to select the type of robot that requires maintenance and then outputs the corresponding instructions.
     """
+    # Prints title and options to user.
     print("***A very short guide on how to fix a robot***")
     print("""
           What type of robot do you have:
@@ -11,7 +12,7 @@ def fix_robot():
           3. Humanoid Robot
           """)
     try:
-        robot_type = int(input("Choose your robot type (1, 2, or 3): "))
+        robot_type = int(input("Choose your robot type (1, 2, or 3): "))  # Asking the user what option number they want to select.
         match robot_type:
             case 1:
                 print("Maintenance: Perform updates, Inspect wiring, Lubricate moving components.")
@@ -28,7 +29,8 @@ def fix_robot():
         print("Invalid input! Please enter a number (1, 2, or 3).")
 
 
-fix_robot()
+fix_robot()  # Calling the fix_robot function.
+
 
 # Strings and Intgers
 # Inputs and Outputs
