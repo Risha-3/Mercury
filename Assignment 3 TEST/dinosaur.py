@@ -10,6 +10,7 @@ def trex_weather(city):
     if weather_data:
         description = weather_data['weather'][0]['description']
         temperature = weather_data['main']['temp']
+        humidity = weather_data[]
             
         message = (
             f"The weather in {city} is {description} "
@@ -17,12 +18,13 @@ def trex_weather(city):
         )
         cowsay.trex(message)
     else:
-        print(f"Could not retrieve weather data for {city}.")
+        print(f"The weather data for {city} could not be found.")
 
-if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python dinosaur.py <city>")
-        sys.exit(1)
+if len(sys.argv) != 2:
+    print("Usage: python dinosaur.py <city>")
+    sys.exit(1)
         
-    city = sys.argv[1]
-    trex_weather(city)
+city = sys.argv[1]
+trex_weather(city)
+
+# /home/codespace/.python/current/bin/python3 "/workspaces/Mercury/Assignment 3 TEST/dinosaur.py" "Kent"
