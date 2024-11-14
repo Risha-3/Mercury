@@ -8,13 +8,15 @@ def trex_weather(city):
     weather_data = get_weather(city, api_key)
     
     if weather_data:
-        description = weather_data['weather'][0]['description']
         temperature = weather_data['main']['temp']
-        humidity = weather_data[]
+        humidity = weather_data['main']['humidity']
+        description = weather_data['weather'][0]['description']
             
         message = (
-            f"The weather in {city} is {description} "
-            f"with a temperature of {temperature}°C."
+            f"Weather in {city}:\n"
+            f"Temperature: {temperature}°C\n"
+            f"Humidity: {humidity}%\n"
+            f"Description: {description}"
         )
         cowsay.trex(message)
     else:
