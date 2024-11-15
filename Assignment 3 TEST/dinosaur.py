@@ -1,4 +1,4 @@
-# Importing cowsay and sys library
+# Importing cowsay and sys library.
 import cowsay
 import sys
 # The 'get_weather' function and the 'api_key' variable is imported from the 'weatherQuery' python file.
@@ -28,6 +28,7 @@ def trex_weather(city):
 
 if len(sys.argv) != 2:
     print("Usage: python dinosaur.py <city>")
+    # Terminating program with an error.
     sys.exit(1)
         
 city = sys.argv[1]
