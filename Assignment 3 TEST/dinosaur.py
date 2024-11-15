@@ -35,4 +35,3 @@ city = sys.argv[1]
 trex_weather(city)
 
 # /home/codespace/.python/current/bin/python3 "/workspaces/Mercury/Assignment 3 TEST/dinosaur.py" "Canterbury"
-# python dinosaur.py Canterbury
