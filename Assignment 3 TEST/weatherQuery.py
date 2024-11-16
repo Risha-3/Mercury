@@ -1,10 +1,13 @@
 
-import requests
+import requests # pip install requests
 import json
 
 api_key = 'f3d6d1f6c418203d3d2c727199918c83'
 
 def get_weather(city, api_key):
+    """
+    This function retrieves the weather data for a city using the Open Weather Map API.
+    """
     base_url = "http://api.openweathermap.org/data/2.5/weather"
     params = {
         "q": city,
