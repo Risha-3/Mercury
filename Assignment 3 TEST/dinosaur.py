@@ -31,11 +31,11 @@ def trex_weather(city):
 # sys.argv[1]: city name
 if len(sys.argv) != 2:
     print("Please type the name of the city in speech marks after python dinosaur.py")
-    print('Example: python dinosaur.py "Canterbury" ')
+    print('Example: python dinosaur.py "Canterbury"')
     # Terminating program with an error.
     sys.exit(1)
 
-# The city from the command line argument is retrieved.       
+# The name of the city is retrieved from the command line.       
 city = sys.argv[1]
 # The 'trex_weather' function is called.
 trex_weather(city)
