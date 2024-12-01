@@ -7,10 +7,10 @@ def main():
     percentage = convert(fraction)
     gauge_reading = gauge(percentage)
     print(f"Gauge: {gauge_reading}")
-  except ZeroDivisionError as e:
-    print(f"ERROR: {e}")
-  except ValueError as e:
-    print(f"ERROR: {e}")
+  except ZeroDivisionError:
+    print("Y cannot be 0 in X/Y.")
+  except ValueError:
+    print("X must be less than or equal to Y.")
   
 def convert(fraction):
   """
@@ -20,9 +20,9 @@ def convert(fraction):
   numerator = int(numerator)
   denominator = int(denominator)
   if denominator == 0:
-    raise ZeroDivisionError("Y cannot be 0 in X/Y.")
+    raise ZeroDivisionError
   if numerator > denominator:
-    raise ValueError("X must be less than or equal to Y.")
+    raise ValueError
   percentage = round((numerator / denominator) * 100)
   return percentage
 

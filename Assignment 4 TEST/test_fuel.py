@@ -17,7 +17,7 @@ def test_convert_numerator_greater_than_denominator():
 
 def test_convert_invalid_format():
     with pytest.raises(ValueError):
-        convert("a/123")
+        convert("a/5")
 
 # The three test cases for the gauge function
 def test_gauge_empty():
