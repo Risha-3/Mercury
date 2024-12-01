@@ -10,13 +10,14 @@ def main():
   except ZeroDivisionError:
     print("Y cannot be 0 in X/Y.")
   except ValueError:
-    print("X must be less than or equal to Y.")
+    print("X and Y must be integers and X must be less than or equal to Y.")
   
 def convert(fraction):
   """
 
   """
   numerator, denominator = fraction.split("/")
+  # Converting the numerator and denominator to integers, raises ValueError if it is not valid.
   numerator = int(numerator)
   denominator = int(denominator)
   if denominator == 0:
@@ -41,4 +42,4 @@ if __name__ == "__main__":
     main()
 
 # cd "C:\Users\risha\Documents\Mercury repo\Mercury\Assignment 4 TEST"
-# pytest test_fuel.py
+# python -m pytest test_fuel.py
