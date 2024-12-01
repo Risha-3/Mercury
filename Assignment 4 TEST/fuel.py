@@ -40,3 +40,5 @@ def gauge(percentage):
 if __name__ == "__main__":
     main()
 
+# cd "C:\Users\risha\Documents\Mercury repo\Mercury\Assignment 4 TEST"
+# pytest test_fuel.py
