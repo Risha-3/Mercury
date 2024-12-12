@@ -10,7 +10,6 @@ def check_ip(ip):
         # Split the IP into octets and check the range
         octets = ip.split('.')
         return len(octets) == 4 and all(0 <= int(octet) <= 255 for octet in octets)
-    
     except ValueError:
         # Handle cases where conversion to int fails
         return False

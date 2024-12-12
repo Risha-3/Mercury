@@ -1,18 +1,18 @@
-from ip_library import extract_ip, filter_ip
+import ip_library
 
 def main():
     # File paths (adjust these as needed)
-    input_file = 'input_ips.txt'   # The file containing the list of IPs
-    output_file = 'valid_ips.txt'  # The file where valid IPs will be saved
+    input_file = 'input_ip_list.txt'   # The file containing the list of IPs
+    output_file = 'valid_ip_list.txt'  # The file where valid IPs will be saved
 
     # Step 1: Read IP addresses from a file
-    ip_addresses = read_ip(input_file)
+    ip_addresses = ip_library.read_ip(input_file)
 
     # Step 2: Filter the valid IPs
-    valid_ips = filter_ip(ip_addresses)
+    valid_ips = ip_library.filter_ip(ip_addresses)
 
     # Step 3: Write the valid IPs to a new file
-    write_ip(valid_ips, output_file)
+    ip_library.write_ip(valid_ips, output_file)
 
     print(f"Valid IPs have been written to {output_file}")
 

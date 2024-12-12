@@ -1,11 +1,11 @@
-import unittest
 from ip_library import extract_ip, check_ip, filter_ip
 
 # Test function for extract_ip
 def test_extract_ip():
     text = "Valid IPs: 192.168.1.1, 10.0.0.1. Invalid IPs: 300.300.300.300, abc.def.ghi.jkl."
     expected = ['192.168.1.1', '10.0.0.1', '300.300.300.300']
-    assert extract_ip(text) == expected, f"Expected {expected} but got {extract_ip(text)}"
+    result = extract_ip(text)
+    assert result == expected, f"Expected {expected}, but got {result}"
 
 # Test function for check_ip with valid IPs
 def test_check_ip_valid():
@@ -23,12 +23,11 @@ def test_check_ip_invalid():
 def test_filter_ip():
     ip_list = ['192.168.1.1', '10.0.0.1', '300.300.300.300', 'invalid_ip']
     expected = ['192.168.1.1', '10.0.0.1']
-    assert filter_ip(ip_list) == expected, f"Expected {expected} but got {filter_ip(ip_list)}"
+    result = filter_ip(ip_list)
+    assert result == expected, f"Expected {expected}, but got {result}"
 
-# Running the tests
-if __name__ == "__main__":
-    test_extract_ip()
-    test_check_ip_valid()
-    test_check_ip_invalid()
-    test_filter_ip()
-    print("All tests passed!")
+# Running all tests
+test_extract_ip()
+test_check_ip_valid()
+test_check_ip_invalid()
+test_filter_ip()
