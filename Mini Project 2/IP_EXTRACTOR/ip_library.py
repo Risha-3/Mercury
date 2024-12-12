@@ -34,7 +34,7 @@ def read_ip(file_path):
     This function reads from a text file and returns a list of strings where each string is an IP address read from the file.
     """
     with open(file_path, 'r') as file:
-        # Read lines from the file and strip any whitespace.
+        # Read lines from the file and strip any whitespaces.
         return [line.strip() for line in file.readlines()]
 
 def write_ip(valid_ips, output_file_path):
