@@ -1,4 +1,4 @@
-from ip_extractor import extract_ip, filter_ip
+from ip_library import extract_ip, filter_ip
 
 def main():
     # Input text with potential IPs
@@ -16,3 +16,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# cd "C:\Users\risha\Documents\Mercury repo\Mercury\Mini Project 2"
+# python "C:\Users\risha\Documents\Mercury repo\Mercury\Mini Project 2\main.py"
