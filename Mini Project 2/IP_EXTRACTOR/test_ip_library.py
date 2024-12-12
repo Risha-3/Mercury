@@ -27,4 +27,5 @@ def test_filter_ip():
     result = filter_ip(ip_list)
     assert result == expected, f"Expected {expected}, but got {result}"
 
-# pytest test_ip_library.py
+# cd "C:\Users\risha\Documents\Mercury repo\Mercury\Mini Project 2\IP_EXTRACTOR"
+# python -m pytest test_ip_library.py
