@@ -3,6 +3,8 @@ import re
 ip_pattern = r'\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\b'
 
 def extract_ip(text):
+    """
+    """
     return re.findall(ip_pattern, text)
 
 def check_ip(ip):
