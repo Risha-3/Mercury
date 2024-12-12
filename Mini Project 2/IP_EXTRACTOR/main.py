@@ -1,21 +1,23 @@
 from ip_library import extract_ip, filter_ip
 
 def main():
-    # Input text with potential IPs
-    text = input("Enter text containing IP addresses: ")
+    # File paths (adjust these as needed)
+    input_file = 'input_ips.txt'   # The file containing the list of IPs
+    output_file = 'valid_ips.txt'  # The file where valid IPs will be saved
 
-    # Extract IPs using the library
-    extracted_ips = extract_ip(text)
-    print("\nExtracted IP Addresses:")
-    print(extracted_ips)
+    # Step 1: Read IP addresses from a file
+    ip_addresses = read_ip(input_file)
 
-    # Filter valid IPs using the library
-    valid_ips = filter_ip(extracted_ips)
-    print("\nValid IP Addresses:")
-    print(valid_ips)
+    # Step 2: Filter the valid IPs
+    valid_ips = filter_ip(ip_addresses)
+
+    # Step 3: Write the valid IPs to a new file
+    write_ip(valid_ips, output_file)
+
+    print(f"Valid IPs have been written to {output_file}")
 
 if __name__ == "__main__":
     main()
 
-# cd "C:\Users\risha\Documents\Mercury repo\Mercury\Mini Project 2"
-# python "C:\Users\risha\Documents\Mercury repo\Mercury\Mini Project 2\main.py"
+# cd "C:\Users\risha\Documents\Mercury repo\Mercury\Mini Project 2\IP_EXTRACTOR"
+# python main.py
