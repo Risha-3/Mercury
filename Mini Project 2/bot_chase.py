@@ -63,13 +63,11 @@ def game_loop():
 
     # Add sprites to group
     all_sprites.add(robot, target)
-
     clock = pygame.time.Clock()
     running = True
 
     while running:
         screen.fill(background_colour)
-
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
